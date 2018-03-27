@@ -19,10 +19,10 @@ do
 	setvar $relay_status=0
 
 	% Command topic
-	setvar $command_topic = "obiswitch/set/" | $device_number
+	setvar $command_topic = $mqtt_prefix | "/set/" | $device_number
 
 	% Status topic
-	setvar $status_topic = "obiswitch/status/" | $device_number
+	setvar $status_topic = $mqtt_prefix | "/status/" | $device_number
 
 	publish local $status_topic $relay_status retained
 
