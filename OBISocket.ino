@@ -10,8 +10,8 @@ const char* password = "YourPassword";
 // MQTT Settings
 
 const char* mqtt_server = "YourBroker";
-const char* mqtt_command_topic = "obisocket/0/command";
-const char* mqtt_status_topic = "obisocket/0/status";
+const char* mqtt_command_topic = "obisocket/set/0";
+const char* mqtt_status_topic = "obisocket/status/0";
 
 bool relay_status = false;
 
